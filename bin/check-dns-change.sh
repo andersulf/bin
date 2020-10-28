@@ -64,7 +64,6 @@ fi
 
 while getopts "d:hosS" optname
   do
-    echo $optname
     case "$optname" in
       "d")
         DELAY=$OPTARG;
