@@ -25,7 +25,7 @@ function create_symlinks {
   for file_path in ./bin/* ; do
     fullname=$(basename -- $file_path)
     filename="${fullname%.*}"
-    ln -s ${BINDIR}/${fullname} ${BINDIR}/${filename} 
+    ln -sfn ${BINDIR}/${fullname} ${BINDIR}/${filename} 
   done
 }
 
